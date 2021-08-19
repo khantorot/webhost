@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/login.css">
+</head>
+<body>
+    <section class="pass">
+        <div class="content content--side">
+            <form class="form" action="" method="">
+                <div class="form__item">
+                    <label class="form__label" for="email">Full Name</label>
+                    <input class="form__input" type="text" name="name" id="name">
+                </div>
+                <div class="form__item">
+                    <label class="form__label" for="email">Email Address</label>
+                    <input class="form__input" type="email" name="email" id="email">
+                </div>
+                <div class="form__item">
+                    <label class="form__label" for="password">Password</label>
+                    <div class="form__input-wrap">
+                        <input class="form__input" type="password" name="password" id="password">
+                        <p class="form__password-strength" id="strength-output"></p>
+                    </div>
+                </div>
+                <div class="form__item form__item--actions">
+                    <span>Already have an account? <a class="form__link" href="#">Login here</a></span>
+                    <input class="form__button" type="button" name="signup" value="Signup">
+                </div>
+            </form>
+        </div>
+        <div class="content content--side">
+            <div class="poster" style="background-image:url(./content/images/2.jpg)"></div>
+            <div class="canvas-wrap">
+                <canvas></canvas>
+            </div>
+        </div>
+    </section>
+
+    <script src="./assets/js/zxcvbn.js"></script>
+    <script src="./assets/js/imagesloaded.pkgd.min.js"></script>
+    <script src="./assets/js/demo2.js"></script>
+</body>
+</html>

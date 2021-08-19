@@ -1,0 +1,152 @@
+header img{
+	position: absolute;
+	right: 50px;
+	bottom: 20px;
+	width: 40%;
+}
+.textBox{
+	position: absolute;
+	width: 50%;
+	left: 5%;
+	top: 50%;
+	transform: translateY(-60%);
+}
+.textBox h2{
+	font-size: 40px;
+	color: #ffb359;
+}
+.textBox p{
+	margin: 20px 0px;
+}
+
+.textBox a{
+	position: relative;
+	top: 30px;
+	color: #267aa6;
+	font-size: 20px;
+	border: 1px solid #267aa6;
+	padding: 10px 30px;
+	border-radius: 100px;
+	position: relative;
+	transition: all ease 0.4s;
+}
+
+.textBox a:after{
+	content: '';
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	background: #267aa6;
+	z-index: -1;
+	border-radius: 100px;
+	transform: scale(0);
+	transition: all ease 0.3s;
+}
+.textBox a:hover:after{
+	transform: scale(1);
+}
+.textBox a:hover{
+	transition-delay: 0s;
+	color: #ffb359;
+	top: 35px;
+	box-shadow: -5px -5px 20px #ffb359,
+					5px 5px 20px #ffb359,
+					5px -5px 20px #ffb359,
+					-5px 5px 20px #ffb359;
+}
+
+.domenBlock{
+	position: relative;
+	height: 600px;
+}
+.domenBlock h2{
+	margin-top: 30px;
+	text-align: center;
+	font-size: 30px;
+	font-weight: 100;
+	color: #ffb359;
+}
+
+.domenBlock div{
+	position: relative;
+	width: 45%;
+	left: 5%;
+	top: 50px;
+	float: left;
+	text-align: center;
+}
+.domenBlock div:nth-child(3) img{
+	width: 86%;
+}
+.domenBlock div img{
+	width: 100%;
+}
+.domenBlock div h4{
+	margin: 10px 0px;
+	font-size: 22px;
+}
+.domenBlock div p{
+	font-size: 17px;
+}
+.domenBlock h6{
+	margin-top: 10px;
+	font-size: 14px;
+}
+
+@media screen and (max-width: 765px){
+	header img{
+		display: none;
+	}
+	.textBox{
+		width: 80%;
+		left: 10%;
+		top: 100px;
+		transform: translateY(0%);
+	}
+	.textBox h2{
+		font-size: 23px;
+	}
+	.textBox p{
+		margin: 10px 0px;
+		font-size: 16px;
+	}
+
+	.textBox a{
+		top: 20px;
+		font-size: 20px;
+		padding: 5px 15px;
+	}
+
+	.domenBlock{
+		margin-top: 250px;
+		height: 900px;
+		width: 90%;
+		left: 5%;	
+	}
+	.domenBlock h2{
+		margin-top: 30px;
+		font-size: 25px;
+	}
+
+	.domenBlock div{
+		position: relative;
+		width: 100%;
+		left: 0%;
+		top: 0px;
+		margin-top: 50px;
+		float: none;
+	}
+	.domenBlock div h4{
+		margin: 10px 0px;
+		font-size: 22px;
+	}
+	.domenBlock div p{
+		font-size: 17px;
+	}
+	.domenBlock h6{
+		margin-top: 10px;
+		font-size: 14px;
+	}
+}
