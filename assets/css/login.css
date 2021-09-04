@@ -1,3 +1,8 @@
+.pass{
+	width: 90%;
+	margin-left: 10%;
+}
+
 
 .content {
 	position: relative;
@@ -90,8 +95,9 @@ canvas {
 .form__input {
 	padding: 1rem;
 	width: 100%;
-	border: 1px solid #ddd;
+	border: 1px solid var(--index1);
 	font-weight: bold;
+	border-radius: 15px;
 }
 
 .form__input-wrap {
@@ -99,7 +105,7 @@ canvas {
 }
 
 .form__input:focus {
-	border-color: #000;
+	border-color: var(--index);
 	outline: none;
 }
 
@@ -126,19 +132,12 @@ canvas {
 	outline: none;
 }
 
-.demo-2 main {
-	flex-direction: row-reverse;
+
+.pass{
+    display: flex;
 }
 
-.demo-2 .github,
-.demo-2 .demos {
-	margin: 0 auto 0 0;
-}
-
-@media screen and (max-width: 45em) {
-	body {
-		overflow: auto;
-	}
+@media screen and (max-width: 900px){
 	.content {
 		height: auto;
 		min-height: 0;
@@ -156,9 +155,12 @@ canvas {
 		width: 100vw;
 		height: 100vw;
 	}
+	.pass{
+		width: 100%;
+		margin-top: 100px;
+		margin-left: 0;
+		flex-direction: column-reverse;
+	}
 }
 
 
-.pass{
-    display: flex;
-}
