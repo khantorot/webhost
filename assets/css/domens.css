@@ -1,0 +1,61 @@
+.domenBlock{
+	display: flex;
+	flex-wrap: wrap;
+	align-items: stretch;
+	justify-content: space-between;
+	width: 80%;
+	margin: 100px auto 30px auto;
+}
+
+.domenBlock .box{
+	width: calc(50% - 20px);
+	margin-bottom: 20px;
+	padding: 30px;
+	border-radius: 30px;
+}
+
+.domenBlock .box img{
+	width: 100%;
+}
+
+.domenBlock .box p{
+	font-size: 16px;
+	margin-bottom: 10px;
+}
+
+
+.domenBlock .box h4{
+	font-size: 22px;
+	color: var(--index);
+	margin: 10px 0;
+}
+
+.domenBlock .box h6{
+	font-size: 14px;
+}
+
+.domenBlock h2{
+	width: 100%;
+    text-align: center;
+    font-size: 33px;
+    font-weight: 700;
+    padding: 0 20%;
+    color: var(--index);
+    margin-bottom: 40px;
+}
+
+
+
+@media screen and (max-width: 900px){
+	.domenBlock{
+		width: 100%;
+	}
+	.domenBlock .box{
+		width: 100%;
+		padding: 20px;
+	}
+	.domenBlock h2{
+		font-size: 22px;
+		padding: 0 20px;
+	}
+}

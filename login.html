@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/png" href="./content/icons/shortcut.png">
+    <title>WebHost Контакты</title>
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/login.css">
+</head>
+
+<body>
+    <div class="preloader">
+        <div class="load_img">
+            <img src="./content/icons/arrow.png" alt="arrow">
+        </div>
+    </div>
+    <nav>
+        <div class="menuBtn">
+            <span></span>
+        </div>
+        <div class="loginBtn">
+            <a href="./login.html">Войти</a>
+        </div>
+        <a href="./index.html" class="logo">
+            <img src="./content/images/logo.png" alt="logo">
+        </a>
+        <div class="scrollBtn">
+            <img src="./content/icons/arrow.png" alt="arrow">
+        </div>
+        <div class="menu">
+            <div class="menuList">
+                <a href="./index.html">Главная</a>
+                <a href="./hosting.html">Хостинг</a>
+                <a href="./domens.html">Домены</a>
+                <a href="./contact.html">Контакт</a>
+            </div>
+            <div class="social">
+                <p>Подписывайтесь</p>
+                <a href="https://www.instagram.com" target="_blank">
+                    <img src="./content/icons/instagram.png" alt="instagram">
+                </a>
+                <a href="https://www.facebook.com" target="_blank">
+                    <img src="./content/icons/facebook.png" alt="facebook">
+                </a>
+                <a href="mailto:info@webhost.kg" target="_blank">
+                    <img src="./content/icons/google.png" alt="google">
+                </a>
+                <a href="https://vk.com" target="_blank">
+                    <img src="./content/icons/vk.png" alt="vk">
+                </a>
+            </div>
+        </div>
+    </nav>
+    <div class="wrap">
+        <section class="pass">
+            <div class="content content--side">
+                <form class="form" action="" method="">
+                    <div class="form__item">
+                        <label class="form__label" for="email">Ваше имя</label>
+                        <input class="form__input" type="text" name="name" id="name">
+                    </div>
+                    <div class="form__item">
+                        <label class="form__label" for="email">Ваша почта</label>
+                        <input class="form__input" type="email" name="email" id="email">
+                    </div>
+                    <div class="form__item">
+                        <label class="form__label" for="password">Пароль</label>
+                        <div class="form__input-wrap">
+                            <input class="form__input" type="password" name="password" id="password">
+                            <p class="form__password-strength" id="strength-output"></p>
+                        </div>
+                    </div>
+                    <div class="form__item form__item--actions">
+                        <span>Уже есть аккаунт? <a class="form__link" href="./login.html">Войти</a></span>
+                        <input class="form__button" type="button" name="signup" value="Регистрация">
+                    </div>
+                </form>
+            </div>
+            <div class="content content--side">
+                <div class="poster" style="background-image:url(./content/images/login1.jpg)"></div>
+                <div class="canvas-wrap">
+                    <canvas></canvas>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <ul>
+                <li><a href="./index.html">Главная</a></li>
+                <li><a href="./hosting.html">Хостинг</a></li>
+                <li><a href="./domens.html">Домены</a></li>
+                <li><a href="./contact.html">Контакты</a></li>
+                <li><a href="./login.html">Профиль</a></li>
+            </ul>
+            <form action="">
+                <h4>Узнавайте первыми о новостях</h4>
+                <input type="text" placeholder="Ваша почта" name="email">
+                <button>Отправить</button>
+            </form>
+            <div class="caption">
+                <a href="license.html" target="_blank">Лицензия ГАС КР № 17-0125-КР</a>
+                <p>© 2019 <a href="./index.html">WEBHOST.KG </a>- Стабильный хостинг в Кыргызстане.</p>
+            </div>
+        </footer>
+    </div>
+    <script src="./assets/js/main.js"></script>
+    <script src="./assets/js/login_script.js"></script>
+    <script src="./assets/js/imagesloaded.pkgd.min.js"></script>
+    <script src="./assets/js/login.js"></script>
+</body>
+
+</html>
